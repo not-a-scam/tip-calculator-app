@@ -185,8 +185,6 @@ input::-webkit-inner-spin-button {
 
 .warning{
     color: hsl(27, 64%, 52%);
-    font-size: 1.2rem;
-    font-weight: 700;
     text-align: right;
 }
 
@@ -198,3 +196,151 @@ input::-webkit-inner-spin-button {
 .attribution a { 
     color: hsl(228, 45%, 44%);
  }
+
+ @media only screen and (max-width: 1400px) {
+    .tip-btn {
+        font-size: 1.2rem;
+    }
+
+    .custom-input{
+        font-size: 1.2rem;
+    }
+
+    .result-title {
+        font-size: 1.1rem;
+    }
+    
+    .result-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .amount {
+        font-size: 3rem;
+    }
+
+    .reset-btn {
+        font-size: 1.2rem;
+    }
+
+    .text-input input{
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+  } 
+
+  @media only screen and (max-width: 1200px){
+    .tip-btn {
+        font-size: 1rem;
+    }
+
+    .custom-input{
+        font-size: 1rem;
+    }
+
+    .result-title {
+        font-size: .8rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    .amount {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: .8rem;
+    }
+
+    .reset-btn {
+        font-size: 1rem;
+    }
+
+    .text-input input{
+        font-size: .8rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+      .btn-container{
+          position: relative;
+          margin-top: 3rem;
+      }
+
+      .container-fluid{
+          padding: 0;
+      }
+  }
+
+  @media only screen and (min-width: 992px){
+      .container-fluid{
+          width: 85%;
+      }
+  }
+
+  @media only screen and (max-width: 400px){
+
+    .app{
+        padding: 2rem 1.3rem;
+    }
+
+    .tip-btn {
+        font-size: .7rem;
+    }
+
+    .custom-input{
+        font-size: .7rem;
+    }
+
+    .result-title {
+        font-size: 1.1rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    h2 {
+        font-size: .7rem;
+    }
+
+    .text-input input{
+        padding: .5rem;
+        font-size: .5rem;
+    }
+
+    .text-input img{
+        height: 1rem;
+        width: auto;
+    }
+
+    .btn-container {
+        margin-top: 1.1rem;
+    }
+
+    .result {
+        padding: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .tip-btn, .custom-input {
+        font-size: .6rem;
+    }
+
+    .result-title {
+        font-size: .8rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    .amount {
+        font-size: 2rem;
+    }
+  }

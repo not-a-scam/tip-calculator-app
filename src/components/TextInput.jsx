@@ -5,7 +5,7 @@ function TextInput(props){
     const [visibility, setVisibility] = useState({visibility: "hidden"});
 
     function checkInput(value) {
-        if(value){
+        if(value !== "0" && value){
             setClasses({});
             setVisibility({visibility: "hidden"});
         } else {
@@ -16,10 +16,10 @@ function TextInput(props){
 
     return <div>
         <div className="row">
-            <div className="col-6">
+            <div className="col-md-6 col-7">
                 <h2 className={props.isTop ? "top-h2": ""}>{props.title}</h2>
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-5">
                 <h2 className={props.isTop ? "warning top-h2": "warning"} style={visibility}>Can't be zero</h2>
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/logo.svg"
 
 function Header(){
-    return <div className="container">
+    return <div className="container-fluid">
         <div className="title">
         <img src={logo} alt="Dollar symbol" />
         </div>

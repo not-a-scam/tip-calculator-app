@@ -109,13 +109,13 @@ function App(){
 
     return <div>
         <Header />
-        <div className="container">
+        <div className="container-fluid">
             <div className="app">
                 <div className="row gx-5">
                     <div className="col-md-12 col-lg-6">
                         <div className="section">
                             <TextInput title="Bill" icon={dollar} isTop={true} onChange={onBillChange} value={bill}/>
-                            <div className="row gy-2">
+                            <div className="row g-2">
                             <div className="col-12">
                                 <h2>Select Tip %</h2>
                             </div>

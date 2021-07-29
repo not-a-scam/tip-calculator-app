@@ -1,0 +1,346 @@
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+h2 {
+    color: hsl(186, 14%, 43%);
+    font-size: 1.2rem;
+    margin: 3rem 0 .7rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 10vh auto 6vh auto;
+}
+
+.top-h2 {
+    margin-top: 0;
+}
+
+.app{
+    background-color: hsl(0, 0%, 100%);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.section{
+    margin: .6rem;
+    height: 100%;
+}
+
+.tip-btn{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.tip-btn:hover, .reset-btn:hover{
+    background-color: hsl(160, 100%, 83%);
+}
+
+.tip-btn:focus, .reset-btn:focus{
+    box-shadow: none;
+}
+
+.selected-tip-btn {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.custom-input {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border-radius: .25rem;
+    text-align: right;
+    padding: 0 1rem;
+}
+
+.custom-input:focus{
+    caret-color: hsl(172, 67%, 45%);
+    box-shadow: 0 0 0 2pt hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reset-btn {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.result{
+    background-color: hsl(183, 100%, 15%);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.results-container {
+    position: relative;
+    height: 100%;
+}
+
+.btn-container{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.result-headings {
+    margin: auto;
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.result-subtitle {
+    color: hsl(185, 41%, 84%);
+}
+
+.amount{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: right;
+    color: hsl(172, 67%, 45%);
+}
+
+.text-input{
+    position: relative;
+    width: 100%;
+}
+
+.text-input input{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    border: 0;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    display: inline;
+    width: 100%;
+    outline: none;
+    padding: .8rem 1.3rem .8rem 2.3rem;
+    text-align: right;
+}
+
+.text-input input:focus{
+    box-shadow: 0 0 0 2pt hsl(172, 67%, 45%);
+}
+
+.no-text {
+    box-shadow: 0 0 0 2pt hsl(27, 64%, 52%);
+}
+
+.text-input img{
+    width: 1rem;
+    height: auto;
+    position: absolute;
+    margin: auto .8rem;
+    top:0;
+    bottom: 0;
+
+}
+
+.warning{
+    color: hsl(27, 64%, 52%);
+    text-align: right;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin: 4rem;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+ }
+
+ @media only screen and (max-width: 1400px) {
+    .tip-btn {
+        font-size: 1.2rem;
+    }
+
+    .custom-input{
+        font-size: 1.2rem;
+    }
+
+    .result-title {
+        font-size: 1.1rem;
+    }
+    
+    .result-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .amount {
+        font-size: 3rem;
+    }
+
+    .reset-btn {
+        font-size: 1.2rem;
+    }
+
+    .text-input input{
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+  } 
+
+  @media only screen and (max-width: 1200px){
+    .tip-btn {
+        font-size: 1rem;
+    }
+
+    .custom-input{
+        font-size: 1rem;
+    }
+
+    .result-title {
+        font-size: .8rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    .amount {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: .8rem;
+    }
+
+    .reset-btn {
+        font-size: 1rem;
+    }
+
+    .text-input input{
+        font-size: .8rem;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+      .btn-container{
+          position: relative;
+          margin-top: 3rem;
+      }
+
+      .container-fluid{
+          padding: 0;
+      }
+  }
+
+  @media only screen and (min-width: 992px){
+      .container-fluid{
+          width: 85%;
+      }
+  }
+
+  @media only screen and (max-width: 400px){
+
+    .app{
+        padding: 2rem 1.3rem;
+    }
+
+    .tip-btn {
+        font-size: .7rem;
+    }
+
+    .custom-input{
+        font-size: .7rem;
+    }
+
+    .result-title {
+        font-size: 1.1rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    h2 {
+        font-size: .7rem;
+    }
+
+    .text-input input{
+        padding: .5rem;
+        font-size: .5rem;
+    }
+
+    .text-input img{
+        height: 1rem;
+        width: auto;
+    }
+
+    .btn-container {
+        margin-top: 1.1rem;
+    }
+
+    .result {
+        padding: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+    .tip-btn, .custom-input {
+        font-size: .6rem;
+    }
+
+    .result-title {
+        font-size: .8rem;
+    }
+    
+    .result-subtitle {
+        font-size: .6rem;
+    }
+
+    .amount {
+        font-size: 2rem;
+    }
+  }
